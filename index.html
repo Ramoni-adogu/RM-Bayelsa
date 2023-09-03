@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="RMBayelsa">
+    <title>Redemption Ministries Bayelsa</title>
+    <meta property="og:description" content="A branch of Redemption Ministries Worldwide - a church and religious organization - based in Bayelsa State.">
+    <meta property="og:locale" content="en">
+    <meta property="og:image" content="./static/src/img/logo.jpg">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="./static/css/swiper-bundle.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/src/img/logo.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./static/src/img/logo.jpg">
+    <meta itemprop="name" content="RMBayelsa">
+    <meta itemprop="description" content="A branch of Redemption Ministries Worldwide - a church and religious organization - based in Bayelsa State.">
+    <noscript>Javascript is needed to for this website function properly. Please enable Javascript</noscript>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="load-text">
+            <div id="waviy" class="waviy">
+                <span style="--i:1">W</span>
+                <span style="--i:2">E</span>
+                <span style="--i:3">L</span>
+                <span style="--i:4">C</span>
+                <span style="--i:5">O</span>
+                <span style="--i:6">M</span>
+                <span style="--i:7">E</span>
+
+            </div>
+        </div>
+        <div class="loader">
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+        </div>
+
+        <div class="loading-info" id="loading-info">
+            <div class="info-text">
+                <p>Redemption Ministries is dynamically loading page content. <br>Hold on a bit...</p>
+            </div>
+        </div>
+    </div>
+
+    <header class="navbar" id="navbar">
+        <div id="navhead">
+            <img src="./static/src/img/logo.jpg" alt="Redemption Ministries Logo">
+            <a href="#">
+                <h2 id="header-text">Redemption Ministries</h2>
+            </a>
+        </div>
+        <div id="mobile" title="Menu">
+            <div>
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+
+            <span>Menu</span>
+        </div>
+        <nav id="navlinks" class="link">
+            <ul class="menu">
+                <li class="nav-hide"><a href="javascript:void(0)" class="active">Home</a></li>
+                <li class="dropdown nav-hide"><a class="drop-click" href="javascript:void(0)">Sermons
+                </a>
+                    <ul id="messages-content">
+                        <li><a href="#">Audio Messages</a></li>
+                        <li><a href="#">Video Messages</a></li>
+                        <li><a href="#">E-Books</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-hide"><a class="drop-click" href="javascript:void(0)">Services</a>
+                    <ul id="activities-content">
+                        <li><a href="./static/html/testimony.html">Testimonies</a></li>
+                        <li><a href="#">RM Eagle Academy</a></li>
+                        <li><a href="#">RM TV</a></li>
+                        <li><a href="#">RM Bookshop</a></li>
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Track Activities</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-hide"><a class="drop-click" href="javascript:void(0)">Giving</a>
+                    <ul id="giving-content">
+                        <li><a href="./static/html/giving.html">Give Here</a></li>
+                        <li><a href="./static/html/giving.html">TAM and FOC</a></li>
+                        <li><a href="./static/html/giving.html">Vestry Project</a></li>
+                        <li><a href="./static/html/giving.html">Land and Building</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-hide"><a class="drop-click" href="javascript:void(0)">About</a>
+                    <ul id="about-content">
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">Mission and Vision</a></li>
+                        <li><a href="#">Our Principles</a></li>
+                        <li><a href="#">Our Structure</a></li>
+                    </ul>
+                </li>
+                <li class="nav-hide"><a href="#">Gallery</a></li>
+                <li class="nav-hide"><a href="#">Contact</a></li>
+                <li class="search-input">
+                    <input type="text" placeholder="Search here..." id="searchInput"><span id="search-reset">&times;</span>
+                    <button type="submit" id="searchButton">Search</button>
+                </li>
+                <li><a class="search-icon" href="javascript:void(0)"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="mob-navlinks" class="mob-link">
+        <ul class="mob-menu">
+            <li><a href="javascript:void(0)" class="active">Home</a></li>
+            <li class="mob-dropdown"><a class="mob-drop-click" href="javascript:void(0)">Sermons</a>
+                <ul id="mob-messages-content">
+                    <li><a href="#">Audio Messages</a></li>
+                    <li><a href="#">Video Messages</a></li>
+                    <li><a href="#">E-Books</a></li>
+                </ul>
+            </li>
+            <li class="mob-dropdown"><a class="mob-drop-click" href="javascript:void(0)">Services</a>
+                <ul id="mob-activities-content">
+                    <li><a href="./static/html/testimony.html">Testimonies</a></li>
+                    <li><a href="#">RM Eagle Academy</a></li>
+                    <li><a href="#">RM TV</a></li>
+                    <li><a href="#">RM Bookshop</a></li>
+                    <li><a href="#">Upcoming Events</a></li>
+                    <li><a href="#">Track Activities</a></li>
+                </ul>
+            </li>
+            <li class="mob-dropdown"><a class="mob-drop-click" href="javascript:void(0)">Giving</a>
+                <ul id="mob-giving-content">
+                    <li><a href="./static/html/giving.html">Give Here</a></li>
+                    <li><a href="./static/html/giving.html">TAM and FOC</a></li>
+                    <li><a href="./static/html/giving.html">Vestry Project</a></li>
+                    <li><a href="./static/html/giving.html">Land and Building</a></li>
+                </ul>
+            </li>
+            <li class="mob-dropdown"><a class="mob-drop-click" href="javascript:void(0)">About</a>
+                <ul id="mob-about-content">
+                    <li><a href="#">Our History</a></li>
+                    <li><a href="#">Mission and Vision</a></li>
+                    <li><a href="#">Our Principles</a></li>
+                    <li><a href="#">Our Structure</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)">Gallery</a></li>
+            <li><a href="javascript:void(0)">Contact</a></li>
+            <li><a class="search-icon" href="javascript:void(0)"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="search-input">
+                <input type="text" placeholder="Search here..." id="mob-searchInput"><span>&times;</span>
+                <button type="button" id="mob-searchButton">Search</button>
+            </li>
+
+        </ul>
+        <!--<select id="language" name="language" placeholder="Language">
+            <option value="en">English</option>
+            <option value="ij">Ijaw</option>
+        </select> -->
+    </nav>
+
+    <!-- <section class="container">
+        <div class="overlay"></div>
+        <div class="text">
+            <h1>Welcome to my website</h1>
+            <p>This is some sample text to show how text can be added on top of a background image with a darker overlay.</p>
+        </div>
+    </section> -->
+
+    <section class="slideshow-container">
+        <div class="slide">
+            <img src="./static/src/img/worship-experience.jpg" alt="A Worship Experience">
+            <div class="overlay-cover"></div>
+            <div class="overlay"></div>
+            <div class="text">
+                <h1>A Worship Experience</h1>
+                <p>"Come, let us bow down in worship, let us kneel before the Lord our Maker; for he is our God and we are the people of his pasture, the flock under his care."
+                    <br><br> <em>Psalm 95:6-7</em>
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./static/src/img/prayer-changes-things.jpg" alt="Prayer Changes Things">
+            <div class="overlay-cover"></div>
+            <div class="overlay"></div>
+            <div class="text">
+                <h1>Prayer Changes Things</h1>
+                <p>"The prayer of a righteous person is powerful and effective."
+                    <br><br> <em>James 5:16</em>
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./static/src/img/church-of-the-firstborn.webp" alt="Church of the Firstborn">
+            <div class="overlay-cover"></div>
+            <div class="overlay"></div>
+            <div class="text">
+                <h1>Church of the Firstborn</h1>
+                <p>"To the general assembly and church of the firstborn, which are written in heaven, and to God the Judge of all, and to the spirits of just men made perfect."
+                    <br><br> <em>Hebrews 12:23</em>
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./static/src/img/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith.jpg" alt="The Trinity Gospel">
+            <div class="overlay-cover"></div>
+            <div class="overlay"></div>
+            <div class="text">
+                <h1>The Trinity Gospel</h1>
+                <p>"For there are three that bear witness in heaven: the Father, the Word, and the Holy Spirit; and these three are one. And there are three that bear witness on earth: the Spirit, the water, and the blood; and these three agree as one."
+                    <br><br> <em>1 John 5:7-8</em>
+                </p>
+            </div>
+        </div>
+        <a class="slideshow-prev" onclick="prevSlide()">&#10094;</a>
+        <a class="slideshow-next" onclick="nextSlide()">&#10095;</a>
+    </section>
+
+    <section class="next-event-container">
+        <div class="calendar-event-notification e-cont-div">
+            <div class="event-timer-header">
+                <img src="./static/src/img/4744824.png" alt="" width="40px">
+                <div><span>NEXT</span> EVENT</div>
+            </div>
+            <div id="eventStatus"></div>
+            <div class="event-countdown">
+                <div class="individual-timer">
+                    <div id="days">00</div>
+                    <div>days</div>
+                </div>
+                <div class="individual-timer">
+                    <div id="hours">00</div>
+                    <div>hrs</div>
+                </div>
+                <div class="individual-timer">
+                    <div id="minutes">00</div>
+                    <div>mins</div>
+                </div>
+                <div class="individual-timer">
+                    <div style="color: red; font-weight: 600;">Left</div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="calendar-event-description e-cont-div">
+            <h3 id="eventName">Event Name</h3>
+            <div><span id="eventDate">Event Date</span> | <span id="eventTime">Event Time</span></div>
+            <a href="#">All Events</a>
+        </div>
+    </section>
+
+    <section class="swiping-images">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./static/src/img//bc-img-4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./static/src/img/s-special_service_1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./static/src/img/bc-img-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./static/src/img/s-kabash_2022.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./static/src/img/s-altar_call1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./static/src/img/s-pastors_2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./static/src/img/s-music_1.jpg" alt=""></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="main-info-cde">
+        <div class="main-cde-card-first starter" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
+            <h2>Wind and Fire <span>2023</span></h2>
+            <p>The Wind and Fire conference will take place from the 21st to the 25th of December, 2023. If you choose to attend, Registration for the programme is on. Remain Blessed!</p>
+            <p>Click here to get yourself fully registered.</p>
+
+            <div class="item-select-button-box">
+                <div>
+                    <a href="./static/html/wind-and-fire-registration.html" class="main-cde-btn first-btn select-style-one">Register</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-cde-card-first" data-aos="fade-up" data-aos-delay="400">
+            <h2>Vestry Project <span>Support</span></h2>
+            <div class="item-select-button-box">
+                <div>
+                    <a href="./static/html/giving.html" class="main-cde-btn first-btn select-style-two">Click Here To Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-cde-card-first starter" data-aos="fade-up" data-aos-delay="400">
+            <h2>Kabash <span>2023</span></h2>
+            <p>The National Youth Conference of Redemption Ministries comes up from the 21st to the 28th of August 2023 at the Headquarters. It is a fully loaded Youth Conference of the Holy Ghost, you can't afford to miss out.</p>
+            <p>If you would love to attend, kindly indicate by clicking below.</p>
+            <div class="item-select-button-box">
+                <div>
+                    <a class="main-cde-btn first-btn select-style-three" href="./static/html/wind-and-fire-registration.html">Interested</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img class="group-hr-styled-lines" src="./static/src/img/hr1.png" alt="">
+
+    <section class="home-messages-preview">
+        <div class="message-preview-header">
+            <h2 data-aos="zoom-in-right">Latest Messages</h2>
+            <div class="large-screen">
+                <a href="#" class="other-messages"><i class="fa fa-angle-right"></i> Other Messages</a>
+            </div>
+        </div>
+
+        <div class="home-messages-preview-container">
+            <div class="message-preview" data-aos="flip-left">
+                <img src="./static/src/img/easter-2.jpg" alt="">
+                <div class="preview-info-wrapper">
+                    <div class="upload-info">
+                        <div class="m-upload-date"><i class="fa fa-calendar"></i> April 29, 2023</div>
+                        <div class="m-upload-type"><i class="fa fa-archive"></i><a href="#">Audio Messages</a></div>
+                    </div>
+                    <a href="./static/html/wind-and-fire-registration.html" class="message-info">
+                        <div class="m-upload-title">The Wise Woman - Part II</div>
+                        <div class="m-upload-preacher">Elder A.D Forcados</div>
+                    </a>
+                </div>
+            </div>
+            <div class="message-preview" data-aos="flip-left">
+                <img src="./static/src/img/tentative-img.jpeg" alt="">
+                <div class="preview-info-wrapper">
+                    <div class="upload-info">
+                        <div class="m-upload-date"><i class="fa fa-calendar"></i> April 29, 2023</div>
+                        <div class="m-upload-type"><i class="fa fa-archive"></i><a href="#">Audio Messages</a></div>
+                    </div>
+                    <a href="./static/html/wind-and-fire-registration.html" class="message-info">
+                        <div class="m-upload-title">Arrow in the hands of a mighty man</div>
+                        <div class="m-upload-preacher">Elder A.D Forcados</div>
+                    </a>
+                </div>
+            </div>
+            <div class="message-preview" data-aos="flip-left">
+                <a href="./static/html/wind-and-fire-registration.html"><img src="./static/src/img/rm-hq.png" alt=""></a>
+                <div class="preview-info-wrapper">
+                    <div class="upload-info">
+                        <div class="m-upload-date"><i class="fa fa-calendar" aria-hidden="true"></i> April 29, 2023</div>
+                        <div class="m-upload-type"><i class="fa fa-archive" aria-hidden="true"></i><a href="#">Audio Messages</a></div>
+                    </div>
+                    <a href="./static/html/wind-and-fire-registration.html" class="message-info">
+                        <div class="m-upload-title">Requirement for excellent kingdom service</div>
+                        <div class="m-upload-preacher">Elder A.D Forcados</div>
+                    </a>
+                </div>
+            </div>
+            <div class="message-preview mob-last" data-aos="flip-left">
+                <img src="./static/src/img/rm-hq.png" alt="">
+                <div class="preview-info-wrapper">
+                    <div class="upload-info">
+                        <div class="m-upload-date"><i class="fa fa-calendar" aria-hidden="true"></i> April 29, 2023</div>
+                        <div class="m-upload-type"><i class="fa fa-archive" aria-hidden="true"></i><a href="#">Audio Messages</a></div>
+                    </div>
+                    <a href="./static/html/wind-and-fire-registration.html" class="message-info">
+                        <div class="m-upload-title">You are highly favoured</div>
+                        <div class="m-upload-preacher">Elder A.D Forcados</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-screen">
+            <a href="#" class="other-messages"><i class="fa fa-angle-right"></i> Other Messages</a>
+        </div>
+
+    </section>
+
+    <section class="broad-ftl-element-card">
+        <div class="second-widget-header">
+            <h2 data-aos="fade-up-left">News</h2>
+        </div>
+
+        <div class="second-widget-container">
+            <div class="large-band-a">
+                <div class="band-info-text" data-aos="fade-right">
+                    <h2>Marketplace Apostles</h2>
+                    <p>If you have a call to help others in the faith or you want to work for the Lord as a Marketplace Apostle and do service for people, you can join the open team.</p>
+                    <button type="button" class="conference-card">Join Apostles</button>
+                </div>
+            </div>
+            <div class="large-band-a">
+                <div class="band-info-text" data-aos="fade-right">
+                    <h2>Celebrating the Elderly</h2>
+                    <p>It is our custom, by divine inspiration to celebrate the elderly in our midst, as a means of honouring the gift of longevity over their lives and to tap from their grace.</p>
+                    <button class="sunday-card" type="button">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="large-repentance-banner">
+        <div class="repentance-container">
+
+            <div class="rep-image-a">
+                <img src="./static/src/img/BackgroundEraser_20230901_092340095.png" alt="" data-aos="zoom-in">
+            </div>
+        </div>
+        <div class="repentance-prayer-cont">
+            <div class="rep-content" data-aos="zoom-in">
+                <h2>"I AM THE WAY"</h2>
+                <p>Jesus says in John 2:14, "I am the Way, the truth and the Life. No one comes to the Father except through Me." <br> Jesus is the only way to salvation and in Him we find peace and rest for our souls. - Matthew 11:28 <br><br> If you are
+                    yet to accept Jesus into your life, there is a chance for you beloved!</p>
+            </div>
+            <ul>
+                <li data-aos="fade-right">Believe in your heart that Jesus is Lord and that He died. John 14:6</li>
+                <li data-aos="fade-right">Acknowledge your sinful ways. John 18:12</li>
+                <li data-aos="fade-right">Confess your sins before God. Hebrews 13:3</li>
+                <li data-aos="fade-right">Turn away from your old lifestyle and habits. Romans 15:3</li>
+                <li data-aos="fade-right">Be a member of a living Bible believing church. Romans 15:3</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="widget-element-display">
+        <div class="general-display-box elemetor-element">
+            <div class="widget-card-large-display" data-aos="fade-up">
+                <h2>FIRST FRUITS</h2>
+                <p>The scripture makes us to understand the importance of offering first fruits to the Lord and sowing seeds. As as the earth remains, seedtime and harvest shall not cease!<br> Give as unto the Lord your first fruits and seeds here</p>
+                <button type="button">Give First Fruits</button>
+            </div>
+            <div class="widget-card-large-display" data-aos="fade-up">
+                <h2>TESTIMONIES</h2>
+                <p>Let the redeemed of the Lord say so. You can say so by filling the testimony form and it would be featured on our website and social media platforms for the week and it would also be given in our Thanksgiving Service at the end of every
+                    month. <br> Hallelujah to God!</p>
+                <button type="button">Share Testimony</button>
+            </div>
+            <div class="widget-card-large-display" data-aos="fade-up">
+                <h2>TALK TO SOMEONE</h2>
+                <p>You are not alone in the experiences you are having, and you may need help from someone. God wants us to be a help and a blessing to others. We are here to help you by the grace of God. <br>You can kindly click on the link below to talk
+                    to someone for help.</p>
+                <button type="button">Talk to Someone</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="element-banner-sect">
+        <div class="overlay-banner"></div>
+        <div class="inner-banner-level">
+            <div>
+                <p id="q-banner-p">QUICKIE BANNER</p>
+                <h2>Bible Reading in One Year</h2>
+                <p>Need help growing in the knowledge of God? Join our one year <span>bible reading challenge</span> today! </p>
+            </div>
+            <div class="elementor-button">
+                <button type="button">Join In</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="meet-general-overseer">
+        <img src="./static/src/img/bc05-443.jpg" class="bc-img-02" alt="">
+        <div class="meet-o-container" data-aos="zoom-in-up">
+            <div class="meet-header-box"><span>Meet Our General Overseer</span></div>
+            <img src="./static/src/img/s-GO.jpg" alt="">
+        </div>
+        <!--<img src="/static/src/img/hr3.png" class="meet-hr-03" alt="">-->
+        <div class="meet-o-container" data-aos="zoom-in-up">
+            <div class="meet-header-box"><span>Meet Our Provincial Pastor</span></div>
+            <img src="./static/src/img/s-pastor_victor_1.jpg" alt="">
+        </div>
+        <div class="meet-o-container" data-aos="zoom-in-up">
+            <div class="meet-header-box"><span>See Church Gallery</span></div>
+            <img src="./static/src/img/s-congregation_2.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="extended-featured-elements">
+        <div class="e-f-e-header">
+            <h2>Ministries</h2>
+        </div>
+
+        <div class="flex-small-ft-one">
+            <div class="small-ft-info-sect-element" data-aos="zoom-in-up">
+                <div class="ft-overlay"></div>
+                <img src="./static/src/img/640208.jpg" alt="" class="bc-img">
+                <h2>Men Ablaze</h2>
+                <!-- <p>See the structure of our men's fellowship and stay up to date on its upcoming events</p> -->
+            </div>
+            <div class="small-ft-info-sect-element" data-aos="zoom-in-up">
+                <div class="ft-overlay"></div>
+                <img src="./static/src/img/640208.jpg" alt="" class="bc-img">
+                <h2>Divine Daughters of Destiny Int'l</h2>
+                <!--<p>See the structure of our men's fellowship and stay up to date on its upcoming events</p>-->
+            </div>
+            <div class="small-ft-info-sect-element" data-aos="zoom-in-up">
+                <div class="ft-overlay"></div>
+                <img src="./static/src/img/640208.jpg" alt="" class="bc-img">
+                <h2>Pneuma Youth</h2>
+                <!--<p>See the structure of our men's fellowship and stay up to date on its upcoming events</p>-->
+            </div>
+            <div class="small-ft-info-sect-element" data-aos="zoom-in-up">
+                <div class="ft-overlay"></div>
+                <img src="./static/src/img/640208.jpg" alt="" class="bc-img">
+                <h2>Children Fellowship</h2>
+                <!--<p>See the structure of our men's fellowship and stay up to date on its upcoming events</p>-->
+            </div>
+        </div>
+    </section>
+
+    <section class="follow-us">
+        <div class="follow-us-widget-container">
+            <h2>- Stay In Touch -</h2>
+            <div class="follow-us-buttons">
+                <div class="social-brands">
+                    <a href="mailto:ramoniadogu@gmail.com" class="google"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hx-a-line"></div>
+
+    <footer class="copyright-show">
+        <div class="chat-section">
+            <span class="chat-text" id="chat-text">Need help? Chat with us</span><a href="javascript:void(0)" class="chat-whatsapp" id="support-btn"><i class="fa fa-comment" aria-hidden="true"></i></a>
+        </div>
+        <a href="#" class="scroll-to-top show-scroller" title="Go to top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="support-select" id="support-select">
+            <div class="support-select-header">
+                <h4>Start a Conversation</h4>
+                <p>Hi! Click one of our chat systems below to initiate a conversation with the team</p>
+            </div>
+            <div class="support-select-body">
+                <span>The team typically replies within minutes to a couple of hours.</span>
+                <div class="support-select-select">
+                    <div class="online-chat-select" id="online-chat-select">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                        <div class="online-chat-select-text">
+                            <span>ONLINE CHAT SUPPORT</span>
+                        </div>
+                    </div>
+                    <div class="whatsapp-chat-select">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="online-chat-select-text">
+                            <span>WHATSAPP SUPPORT CENTRE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="support-modal" id="support-modal">
+            <div class="support-modal-content">
+                <div class="support-modal-header">
+                    <span class="support-close">&times; Close</span>
+                    <h3><i class="fa fa-user" aria-hidden="true"></i> Chat Support</h3>
+                    <p>Please fill out the form below to initiate a chat with an available agent. Will respond as soon as possible!</p>
+                </div>
+                <div class="support-modal-body">
+                    <form action="#" class="support-form">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea name="enquiry" id="support-enquiry" cols="30" rows="10" placeholder="Enquiry/Complaint"></textarea>
+                        <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Start Chat</button>
+                    </form>
+                </div>
+                <div class="support-modal-footer">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> You will be contacted and followed up through email. Please enter an active email address.
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-loader" class="modal-loader">
+            <div class="load-image">
+                <img src="./static/src/img/logo.jpg" alt="">
+            </div>
+            <div class="loader">
+                <span class="loader__element"></span>
+                <span class="loader__element"></span>
+                <span class="loader__element"></span>
+            </div>
+            <div id="modal-loader-info">Loading Data <br> Please Wait</div>
+        </div>
+
+        <div class="main-footer">
+            <div class="main-footer-starter">
+                <div class="footer-grid-a footer-sect">
+                    <div class="footer-church-info">
+                        <img src="./static/src/img/logo.jpg" alt="">
+                        <p>Looking Unto JESUS, the Author and Finisher of our faith... (Hebrews 12: 2)</p>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-grid-b footer-sect">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i> 79 Azikoro Road, Ekeki Yenagoa
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-envelope"></i> info@rmwwby.com
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone-volume"></i> 08063161146
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-grid-c footer-sect">
+                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                    <div>
+                        <form id="subscribe-form" action=".">
+                            <input type="email" placeholder="E-mail" id="newsletter" name="newsletter" required>
+                            <div id="loadingIndicator" style="display:none;">
+                                <div class="loading-spinner"></div>
+                                <p id="spinnerProcessing">Processing...</p>
+                            </div>
+                            <button type="submit" id="submitButton">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                    <div id="feedbackModal" class="feedback-modal">
+                        <div id="feedbackContent" class="feedback-modal-content">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                            <span class="feedback-close-btn">&times;</span>
+                            <h3 id="feedbackHeading"></h3>
+                            <p id="feedbackMsg"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer-ender">
+                <div class="footer-links">
+                    <div>
+                        <a href="#">Headquarters</a>
+                    </div>
+                    <div>
+                        <a href="#">To Top</a>
+                    </div>
+                    <div>
+                        <a href="#">Events</a>
+                    </div>
+                    <div>
+                        <a href="#">News</a>
+                    </div>
+                    <div>
+                        <a href="#">Need Help</a>
+                    </div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <span>&copy; 2023, All Rights Reserved | Redemption Ministries Bayelsa</span>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="./static/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="./static/js/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 1,
+            breakpoints: {
+                120: {
+                    slidesPerView: 1.05,
+                    spaceBetween: 1,
+                },
+                480: {
+                    slidesPerView: 1,
+                },
+                750: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                /*type: 'progressbar',*/
+                dynamicBullets: true,
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+    <script>
+        //Changing img section
+
+        var slides = document.querySelectorAll('.slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 5500);
+
+        function nextSlide() {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].className = 'slide active';
+        }
+
+        function prevSlide() {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            slides[currentSlide].className = 'slide active';
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.keyCode === 37) {
+                clearInterval(slideInterval);
+                prevSlide();
+                slideInterval = setInterval(nextSlide, 5500);
+            } else if (event.keyCode === 39) {
+                clearInterval(slideInterval);
+                nextSlide();
+                slideInterval = setInterval(nextSlide, 5500);
+            }
+        });
+
+        var prevButton = document.querySelector('.slideshow-prev');
+        var nextButton = document.querySelector('.slideshow-next');
+
+        prevButton.addEventListener('click', function() {
+            clearInterval(slideInterval);
+            prevSlide();
+            slideInterval = setInterval(nextSlide, 5500);
+        });
+
+        nextButton.addEventListener('click', function() {
+            clearInterval(slideInterval);
+            nextSlide();
+            slideInterval = setInterval(nextSlide, 5500);
+        });
+
+        // The Countdown Functionality
+        fetch('./static/js/eventsData.json')
+            .then(response => response.json())
+            .then(data => {
+                let events = data.map(event => {
+                    return {
+                        ...event,
+                        date: new Date(event.date + 'T' + event.time)
+                    };
+                });
+
+                updateEventAndCountdown(events);
+            })
+            .catch(error => {
+                console.error("Error fetching events data:", error);
+            });
+
+        let countdownInterval;
+
+        function updateEventAndCountdown(events) {
+            let now = new Date();
+            let currentEvent = null;
+
+            for (let event of events) {
+                if (event.date > now) {
+                    currentEvent = event;
+                    break;
+                }
+            }
+
+            if (!currentEvent) {
+                document.getElementById('eventStatus').innerText = "No Upcoming Events";
+                clearInterval(countdownInterval);
+                return;
+            }
+
+            let diff = (currentEvent.date - now) / 1000;
+            if (diff <= 0) {
+                document.getElementById('eventStatus').innerText = "Happening Now!";
+                clearInterval(countdownInterval);
+                setTimeout(() => updateEventAndCountdown(events), 3600000);
+                return;
+            }
+
+            let days = Math.floor(diff / 86400);
+            diff -= days * 86400;
+
+            let hours = Math.floor(diff / 3600) % 24;
+            diff -= hours * 3600;
+
+            let minutes = Math.floor(diff / 60) % 60;
+            diff -= minutes * 60;
+
+            document.getElementById('days').innerText = String(days).padStart(2, '0');
+            document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+            document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+            document.getElementById('eventName').innerText = currentEvent.name;
+            document.getElementById('eventDate').innerText = currentEvent.date.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'short',
+                day: '2-digit'
+            });
+            document.getElementById('eventTime').innerText = currentEvent.date.toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true
+            });
+
+            countdownInterval = setInterval(() => updateEventAndCountdown(events), 60000);
+        }
+
+        /* Subscribe */
+        function showFeedbackModal(message, isError = true) {
+            const modal = document.getElementById('feedbackModal');
+            const feedbackContent = document.getElementById('feedbackContent');
+            const feedbackHeading = document.getElementById('feedbackHeading');
+            const feedbackMsg = document.getElementById('feedbackMsg');
+            const closeBtn = document.querySelector('.feedback-close-btn');
+
+            feedbackMsg.textContent = message;
+
+            if (isError) {
+                feedbackContent.classList.remove('feedbacksuccess');
+                feedbackContent.classList.add('feedbackerror');
+                feedbackHeading.textContent = 'An Error Occurred!'
+            } else {
+                feedbackContent.classList.remove('feedbackerror');
+                feedbackContent.classList.add('feedbacksuccess');
+                feedbackHeading.textContent = 'Success!'
+            }
+
+            modal.style.display = "block";
+
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+
+        function handleTimeout() {
+            document.getElementById('spinnerProcessing').textContent = "This is taking longer than expected. Please try again later."
+        }
+
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            //Loading spinner
+            document.getElementById('loadingIndicator').style.display = 'block';
+            //Disable submit button
+            document.getElementById('submitButton').disabled = true;
+
+            let newsletter = document.getElementById('newsletter').value;
+
+            // Timeout
+            const timeoutId = setTimeout(handleTimeout, 15000);
+
+            fetch('https://api.backendless.com/3BF53E96-43F9-AD32-FF00-14865D6CAC00/CD4B1927-82B7-4934-82F6-0FEF6D92FD6E/data/Newsletter', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        Newsletter: newsletter,
+                        Date: new Date()
+                    })
+                })
+                .then(response => {
+                    clearTimeout(timeoutId);
+                    document.getElementById('loadingIndicator').style.display = 'none';
+                    document.getElementById('submitButton').disabled = false;
+
+                    if (!response.ok) {
+                        return response.json().then(err => {
+                            throw new Error(err.message);
+                        });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data && data.error) {
+                        showFeedbackModal("Subscribe failed: " + data.message, true);
+                    } else {
+                        showFeedbackModal("Subscribe Successful!", false);
+                        document.getElementById('subscribe-form').reset();
+                    }
+                })
+                .catch(error => {
+                    clearTimeout(timeoutId);
+                    document.getElementById('loadingIndicator').style.display = 'none';
+                    document.getElementById('submitButton').disabled = false;
+                    showFeedbackModal(error, true);
+                });
+        });
+    </script>
+    <script src="./static/js/script.js"></script>
+</body>
+
+</html>

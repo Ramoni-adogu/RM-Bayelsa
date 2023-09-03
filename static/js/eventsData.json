@@ -1,0 +1,15 @@
+[{
+        "name": "Pneuma Worship Service",
+        "date": "2023-09-03",
+        "time": "08:00:00",
+        "description": "Description for this event",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Bible Study",
+        "date": "2023-09-06",
+        "time": "17:00:00",
+        "description": "Description for this event",
+        "location": "Church Auditorium"
+    }
+]
