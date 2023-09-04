@@ -53,7 +53,7 @@ window.addEventListener('load', function() {
     setTimeout(function() {
         const preloader = document.querySelector('#preloader');
         preloader.style.display = 'none';
-    }, 4000); // 1000 milliseconds (1 second) delay
+    }, 200); // 1000 milliseconds (1 second) delay
 });
 
 
