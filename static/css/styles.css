@@ -865,7 +865,7 @@ header.navbar {
     text-align: start;
     opacity: 0;
     transform: translateY(100%);
-    animation: fade-up 1s ease-in-out 2s forwards;
+    animation: fade-up 1s ease-in-out forwards;
 }
 
 @keyframes fade-up {
