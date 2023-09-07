@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="RMBayelsa">
+    <title>Redemption Ministries Bayelsa</title>
+    <meta property="og:description" content="A branch of Redemption Ministries Worldwide - a church and religious organization - based in Bayelsa State.">
+    <meta property="og:locale" content="en">
+    <meta property="og:image" content="../src/img/logo.jpg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/img/logo.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="../src/img/logo.jpg">
+    <meta itemprop="name" content="RMBayelsa">
+    <meta itemprop="description" content="A branch of Redemption Ministries Worldwide - a church and religious organization - based in Bayelsa State.">
+    <noscript>Javascript is needed to run this web app. Please enable Javascript to view this website.</noscript>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/88d54f1693.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        /** Giving Page **/
+        
+        .give-info-flex {
+            position: relative;
+            background-image: url(../src/img/bg-001.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-blend-mode: darken;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+        }
+        /*.main-section-content .navbar {
+            display: none;
+            position: fixed;
+            background-color: #e00000;
+            color: #222;
+            padding: 40px;
+            z-index: 10;
+            top: 0;
+            left: 0;
+        }*/
+        
+        .give-dark-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: hsla(0, 0%, 0%, 0.900);
+        }
+        
+        .main-section-content {
+            position: absolute;
+            width: 100%;
+            /*text-align: center;*/
+        }
+        
+        .give-header-menu {
+            background-color: rgb(243, 0, 0);
+            padding: 5px 2px;
+            width: 90px;
+            position: absolute;
+            border-radius: 7px;
+            top: 50px;
+            left: 50px;
+            cursor: pointer;
+        }
+        
+        .give-header-menu:hover {
+            background-color: rgb(212, 0, 0);
+        }
+        
+        .give-header-menu span {
+            font-size: 14px;
+        }
+        
+        .give-header-tag {
+            margin-top: 25px;
+        }
+        
+        .give-header-tag img {
+            border-radius: 50%;
+            width: 5%;
+        }
+        
+        .give-header-tag h2 {
+            color: #fff;
+            font-size: 18px;
+            padding-top: 10px;
+            text-transform: uppercase;
+        }
+        
+        .giving-content h2 {
+            color: #fff;
+            padding: 40px;
+            padding-bottom: 60px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 38px;
+        }
+        
+        .giving-specifics {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 50%;
+        }
+        
+        .giving-specifics span {
+            font-size: 14px;
+            /*text-transform: uppercase;*/
+            text-align: start;
+        }
+        
+        .giving-specifics a {
+            text-decoration: none;
+            color: #fff;
+            padding: 7px 35px;
+            margin: 8px 0;
+            border: 2px solid #fff;
+            text-transform: uppercase;
+            border-radius: 20px;
+        }
+        
+        .support-select {
+            color: black;
+        }
+        
+        .support-select-header,
+        .support-select-body span {
+            text-align: start;
+        }
+        
+        .support-select-body span {
+            display: flex;
+        }
+        
+        .online-chat-select-text,
+        .whatsapp-chat-select-text {
+            margin-left: 5px;
+        }
+        
+        @media screen and (max-width: 642px) {
+            .give-header-tag img {
+                width: 15%;
+            }
+            .giving-specifics {
+                width: 70%;
+            }
+            .give-header-menu {
+                top: 30px;
+                left: 30px;
+            }
+        }
+        
+        @media screen and (max-height: 800px) {
+            .give-info-flex {
+                height: 120vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="give-info-flex">
+        <div class="give-dark-overlay"></div>
+
+        <div class="main-section-content">
+            <div class="give-header-menu" onclick="window.history.go(-1); return false;">
+                <span>Go Back</span>
+            </div>
+            <div class="give-header-tag">
+                <img src="../src/img/logo.jpg" alt="">
+                <h2>Redemption Ministries Bayelsa</h2>
+            </div>
+            <div class="giving-content">
+                <h2>Online Giving Platform</h2>
+
+                <div class="giving-specifics">
+                    <span>Giving Specifics</span>
+                    <a href="">Tithe And Offering</a>
+                    <a href="">Tam and Foc</a>
+                    <a href="">Vestry/Building</a>
+                    <a href="">First Fruit</a>
+                    <a href="">Welfare</a>
+                    <a href="">Other Giving</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="chat-section">
+                <a href="javascript:void(0)" class="chat-whatsapp giving-pg" id="support-btn"><i class="fa fa-comment" aria-hidden="true"></i></a>
+            </div>
+            <div class="support-modal" id="support-modal">
+                <div class="support-modal-content">
+                    <div class="support-modal-header">
+                        <span class="support-close">&times; Close</span>
+                        <h3><i class="fa fa-user" aria-hidden="true"></i> Chat Support</h3>
+                        <p>Please fill out the form below to initiate a chat with an available agent. Will respond as soon as possible!</p>
+                    </div>
+                    <div class="support-modal-body">
+                        <form action="#" class="support-form">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <textarea name="enquiry" id="support-enquiry" cols="30" rows="10" placeholder="Enquiry/Complaint"></textarea>
+                            <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Start Chat</button>
+                        </form>
+                    </div>
+                    <div class="support-modal-footer">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> You will be contacted and followed up through email. Please enter an active email address.
+                    </div>
+                </div>
+            </div>
+            <div class="support-select" id="support-select">
+                <div class="support-select-header">
+                    <h4>Start a Conversation</h4>
+                    <p>Hi! Click one of our chat systems below to initiate a conversation with the team</p>
+                </div>
+                <div class="support-select-body">
+                    <span>The team typically replies within minutes to a couple of hours.</span>
+                    <div class="support-select-select">
+                        <div class="online-chat-select" id="online-chat-select">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <div class="online-chat-select-text">
+                                <span>ONLINE CHAT SUPPORT</span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-chat-select">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div class="online-chat-select-text">
+                                <span>WHATSAPP SUPPORT CENTRE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-loader" class="modal-loader">
+                <div class="load-image">
+                    <img src="../src/img/logo.jpg" alt="">
+                </div>
+                <div class="loader">
+                    <span class="loader__element"></span>
+                    <span class="loader__element"></span>
+                    <span class="loader__element"></span>
+                </div>
+                <div id="modal-loader-info"></div>
+            </div>
+
+        </footer>
+
+    </section>
+    <script>
+        /* Support Selector */
+        const supportSelect = document.getElementById('support-select');
+        const onlineChat = document.getElementById('online-chat-select');
+        const icon = document.getElementById("chat-icon");
+        /* Support */
+        const supportModal = document.getElementById('support-modal');
+        const supportMe = document.getElementById('support-btn');
+        const chatText = document.getElementById('chat-text');
+        const supportLoaderText = document.getElementById('modal-loader-info');
+        const closeSupport = document.getElementsByClassName('support-close')[0];
+        const modalLoader = document.querySelector('#modal-loader');
+
+        function supportSelector() {
+            supportSelect.classList.toggle('support-select-show');
+            if (supportSelect.classList.contains('support-select-show')) {
+                scrollToTopBtn.classList.add('show-chat-text');
+                chatText.classList.add('show-chat-text');
+                icon.classList.remove("fa-comment");
+                icon.classList.add("fa-times");
+
+            } else {
+                scrollToTopBtn.classList.remove('show-chat-text');
+                chatText.classList.remove('show-chat-text');
+                icon.classList.add("fa-comment");
+                icon.classList.remove("fa-times");
+            }
+
+            onlineChat.addEventListener('click', () => {
+                modalLoader.style.display = 'block';
+                setTimeout(function() {
+                    //const preloader = document.querySelector('#preloader');
+                    modalLoader.style.display = 'none';
+                }, 4000);
+                supportModal.classList.add('reveal');
+            })
+            closeSupport.addEventListener('click', () => {
+                supportModal.classList.remove('reveal');
+                supportSelect.classList.remove('support-select-show');
+                scrollToTopBtn.classList.remove('show-chat-text');
+            })
+            window.onclick = function(event) {
+                if (event.target == supportSelect) {
+                    supportSelect.classList.remove('support-select-show');
+                }
+            }
+        }
+
+        supportMe.addEventListener('click', supportSelector);
+    </script>
+</body>
+
+</html>
