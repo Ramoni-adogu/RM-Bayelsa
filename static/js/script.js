@@ -11,7 +11,7 @@ mobileBtn.addEventListener('click', () => {
 });
 
 //Preloader
-window.addEventListener('load', function() {
+/*window.addEventListener('load', function() {
     if (!localStorage.getItem('preloaderShown')) {
         const preloader = document.querySelector('#preloader');
         preloader.style.display = 'block';
@@ -20,7 +20,24 @@ window.addEventListener('load', function() {
         const preloader = document.querySelector('#preloader');
         preloader.style.display = 'none';
     }
+});*/
+// Preloader
+window.addEventListener('load', function() {
+    const preloader = document.querySelector('#preloader');
+
+    if (!localStorage.getItem('preloaderShown')) {
+        preloader.style.display = 'block';
+
+        // Set a timer to hide the preloader after 2 seconds (adjust the time as needed)
+        setTimeout(function() {
+            preloader.style.display = 'none';
+            localStorage.setItem('preloaderShown', true);
+        }, 2000); // Adjust the time in milliseconds (e.g., 2000 = 2 seconds)
+    } else {
+        preloader.style.display = 'none';
+    }
 });
+
 
 //Web worker
 if ('serviceWorker' in navigator) {
