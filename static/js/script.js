@@ -32,7 +32,7 @@ window.addEventListener('load', function() {
         setTimeout(function() {
             preloader.style.display = 'none';
             localStorage.setItem('preloaderShown', true);
-        }, 2000); // Adjust the time in milliseconds (e.g., 2000 = 2 seconds)
+        }, 4000); // Adjust the time in milliseconds (e.g., 2000 = 2 seconds)
     } else {
         preloader.style.display = 'none';
     }
