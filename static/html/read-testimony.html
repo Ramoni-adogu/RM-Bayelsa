@@ -152,8 +152,8 @@
         <div id="prevTesti">Previous</div>
         <div id="nextTesti">Next</div>
     </section>
-    <div id="offline-modal">
-        <div><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> You're viewing offline. For fully loaded images, contents and latest updates, please connect to a network and refresh page.</div>
+    <div id="offline-modal" style="font-size: 14px;">
+        <div><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Check your network connection!</div>
     </div>
     <footer class="copyright-show">
         <div class="chat-section">
@@ -299,64 +299,95 @@
         </div>
     </footer>
     <script src="../js/script.js"></script>
-    <script>
-        let currentPage = 0;
-        const pageSize = 10;
-        const LOADING_TIMEOUT = 10000;
+    
+<script>
+    let currentPage = 0;
+    const pageSize = 10;
+    const LOADING_TIMEOUT = 10000;
 
-        if (navigator.onLine) {
-            function fetchTestimonies(page = 0) {
-                const offset = page * pageSize;
-                showLoader();
+    if (navigator.onLine) {
 
-                const loadingTimeout = setTimeout(() => {
-                    hideLoader();
-                    displayError('Fetching testimonies is taking longer than expected. Please try again.');
-                }, LOADING_TIMEOUT);
+        function fetchTestimonies(page = 0) {
+            const offset = page * pageSize;
+            showLoader();
+
+            const controller = new AbortController();
+
+            const loadingTimeout = setTimeout(() => {
+                controller.abort();
+                hideLoader();
+                displayError('Fetching testimonies is taking longer than expected. Please try again.');
+            }, LOADING_TIMEOUT);
+
+            // Fetch one extra record to check if another page exists.
+            fetch(`https://api.backendless.com/3BF53E96-43F9-AD32-FF00-14865D6CAC00/CD4B1927-82B7-4934-82F6-0FEF6D92FD6E/data/Testimonies?pageSize=${pageSize + 1}&offset=${offset}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                signal: controller.signal
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch testimonies.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                clearTimeout(loadingTimeout);
+                hideLoader();
+
+                // Check whether an additional page exists.
+                const hasMore = data.length > pageSize;
+
+                // Display only 10 testimonies.
+                const testimoniesToDisplay = data.slice(0, pageSize);
+
+                currentPage = page;
+
+                displayTestimonies(testimoniesToDisplay);
+                updatePaginationControls(hasMore);
+            })
+            .catch(error => {
+                clearTimeout(loadingTimeout);
+                hideLoader();
+
+                if (error.name === 'AbortError') {
+                    return;
+                }
+
+                console.error('Error fetching testimonies:', error);
+
+                displayError('Sorry, there was an error fetching testimonies. Please try checking your connectivity and refresh the page.');
+            });
+        }
 
 
-                fetch(`https://api.backendless.com/3BF53E96-43F9-AD32-FF00-14865D6CAC00/CD4B1927-82B7-4934-82F6-0FEF6D92FD6E/data/Testimonies?pageSize=${pageSize}&offset=${offset}`, {
-                        method: 'GET',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        }
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        hideLoader();
-                        displayTestimonies(data);
-                        updatePaginationControls(data.length);
-                    })
-                    .catch(error => {
-                        clearTimeout(loadingTimeout);
-                        hideLoader();
-                        console.error('Error fetching testimonies:', error);
-                        displayError('Sorry, there was an error fetching testimonies. Please try checking your connectivity and refresh the page.')
-                    });
-            }
+        function showLoader() {
+            document.getElementById('loading-spinner').style.display = 'block';
+        }
 
-            function showLoader() {
-                document.getElementById('loading-spinner').style.display = 'block';
-            }
 
-            function hideLoader() {
-                document.getElementById('loading-spinner').style.display = 'none';
-            }
+        function hideLoader() {
+            document.getElementById('loading-spinner').style.display = 'none';
+        }
 
-            function displayError(message) {
-                const container = document.getElementById('testimoniesContainer');
-                container.innerHTML = `<div class="testi-error">${message}</div>`;
-            }
 
-            function displayTestimonies(testimonies) {
-                const container = document.getElementById('testimoniesContainer');
-                let htmlContent = '';
+        function displayError(message) {
+            const container = document.getElementById('testimoniesContainer');
+            container.innerHTML = `<div class="testi-error">${message}</div>`;
+        }
 
-                testimonies.forEach(testimony => {
-                    const date = new Date(testimony.Date);
-                    const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 
-                    htmlContent += `
+        function displayTestimonies(testimonies) {
+            const container = document.getElementById('testimoniesContainer');
+            let htmlContent = '';
+
+            testimonies.forEach(testimony => {
+                const date = new Date(testimony.Date);
+                const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+
+                htmlContent += `
                     <div class="testimonyItem">
                         <h3>${testimony.TestimonySubject}</h3>
                         <small>${formattedDate}</small>
@@ -364,33 +395,46 @@
                         <h4>${testimony.FullName}</h4>
                     </div>
                 `;
-                });
-                container.innerHTML = htmlContent;
-            }
-
-            function updatePaginationControls(fetchedCount) {
-                document.getElementById('prevTesti').style.display = (currentPage === 0) ? 'none' : 'block';
-                document.getElementById('nextTesti').style.display = (fetchedCount < pageSize) ? 'none' : 'block';
-            }
-
-            document.getElementById('nextTesti').addEventListener('click', function() {
-                currentPage++;
-                fetchTestimonies(currentPage);
             });
 
-            document.getElementById('prevTesti').addEventListener('click', function() {
-                if (currentPage > 0) {
-                    currentPage--;
-                    fetchTestimonies(currentPage);
-                }
-            });
-
-            fetchTestimonies(currentPage);
-        } else {
-            document.getElementById('loading-spinner').style.display = "none";
-            document.getElementById('testimoniesContainer').innerHTML = `<span id="offline-error">Oops! You're currently offline. Please go online to view testimonies.</span>`;
+            container.innerHTML = htmlContent;
         }
-    </script>
+
+
+        function updatePaginationControls(hasMore) {
+            document.getElementById('prevTesti').style.display =
+                currentPage === 0 ? 'none' : 'block';
+
+            document.getElementById('nextTesti').style.display =
+                hasMore ? 'block' : 'none';
+        }
+
+
+        document.getElementById('nextTesti').addEventListener('click', function() {
+            fetchTestimonies(currentPage + 1);
+        });
+
+
+        document.getElementById('prevTesti').addEventListener('click', function() {
+            if (currentPage > 0) {
+                fetchTestimonies(currentPage - 1);
+            }
+        });
+
+
+        // Load the first page.
+        fetchTestimonies(currentPage);
+
+    } else {
+
+        document.getElementById('loading-spinner').style.display = 'none';
+
+        document.getElementById('testimoniesContainer').innerHTML =
+            `<span id="offline-error">Oops! You're currently offline. Please go online to view testimonies.</span>`;
+
+    }
+</script>
+
 </body>
 
 </html>

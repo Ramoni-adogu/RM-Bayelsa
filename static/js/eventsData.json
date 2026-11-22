@@ -1,112 +1,112 @@
 [{
         "name": "Pneuma Worship Service",
-        "date": "2024-01-21",
+        "date": "2026-11-22",
+        "time": "08:00:00",
+        "description": "Special Holy Ghost Sunday Worship Service.",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Bible Study",
+        "date": "2026-11-25",
+        "time": "17:00:00",
+        "description": "Digging deep into God's word and understanding the scriptures.",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "7 Hours of Praise",
+        "date": "2026-11-26",
+        "time": "10:00:00",
+        "description": "Creating an atmosphere of glory through undiluted worship to the King.",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Miracle Service",
+        "date": "2026-11-27",
+        "time": "08:00:00",
+        "description": "Encountering the God of miracles and testimonies",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "November Thanksgiving Service",
+        "date": "2026-11-29",
+        "time": "08:00:00",
+        "description": "A special service to thank God for His goodness and mercy throughout the month of November.",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Bible Study",
+        "date": "2026-12-02",
+        "time": "17:00:00",
+        "description": "Digging deep into God's word and understanding the scriptures.",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Miracle Service",
+        "date": "2026-12-04",
+        "time": "17:00:00",
+        "description": "Encountering the God of miracles and testimonies",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Pneuma Worship Service",
+        "date": "2026-12-06",
         "time": "08:00:00",
         "description": "Special Sunday Holy Ghost Worship Service.",
         "location": "Church Auditorium"
     },
     {
-        "name": "Fasting And Prayer",
-        "date": "2024-01-24",
+        "name": "Bible Study",
+        "date": "2026-12-09",
         "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
+        "description": "Digging deep into God's word and understanding the scriptures.",
         "location": "Church Auditorium"
     },
     {
-        "name": "Fasting And Prayer",
-        "date": "2024-01-26",
+        "name": "Miracle Service",
+        "date": "2026-12-11",
         "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
+        "description": "Encountering the God of miracles and testimonies",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Annual Thanksgiving Service",
+        "date": "2026-12-13",
+        "time": "08:00:00",
+        "description": "A special service to thank God for His goodness and mercy throughout the year.",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Bible Study",
+        "date": "2026-12-16",
+        "time": "17:00:00",
+        "description": "Digging deep into God's word and understanding the scriptures.",
+        "location": "Church Auditorium"
+    },
+    {
+        "name": "Miracle Service",
+        "date": "2026-12-18",
+        "time": "17:00:00",
+        "description": "Encountering the God of miracles and testimonies",
         "location": "Church Auditorium"
     },
     {
         "name": "Pneuma Worship Service",
-        "date": "2024-01-28",
+        "date": "2026-12-20",
         "time": "08:00:00",
         "description": "Special Sunday Holy Ghost Worship Service.",
         "location": "Church Auditorium"
     },
     {
-        "name": "Fasting and Prayer",
-        "date": "2023-02-01",
-        "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
+        "name": "Wind and Fire Conference",
+        "date": "2026-12-23",
+        "time": "16:00:00",
+        "description": "Annual conference of the Holy Spirit.",
         "location": "Church Auditorium"
     },
     {
-        "name": "Fasting and Prayer",
-        "date": "2023-02-03",
-        "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Pneuma Worship Service",
-        "date": "2024-02-04",
-        "time": "08:00:00",
-        "description": "Special Sunday Holy Ghost Worship Service.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Fasting and Prayer",
-        "date": "2024-02-07",
-        "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Fasting and Prayer",
-        "date": "2024-02-09",
-        "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Pneuma Worship Service",
-        "date": "2024-02-11",
-        "time": "08:00:00",
-        "description": "Special Sunday Holy Ghost Worship Service.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Fasting and Prayer",
-        "date": "2024-02-14",
-        "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Fasting and Prayer",
-        "date": "2024-02-16",
-        "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Pneuma Worship Service",
-        "date": "2024-02-18",
-        "time": "08:00:00",
-        "description": "Special Sunday Holy Ghost Worship Service.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Fasting and Prayer",
-        "date": "2024-02-21",
-        "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Fasting and Prayer",
-        "date": "2024-02-23",
-        "time": "17:00:00",
-        "description": "Covenant Pilgrimage fasting and prayers for 2024.",
-        "location": "Church Auditorium"
-    },
-    {
-        "name": "Pneuma Worship Service",
-        "date": "2024-02-25",
-        "time": "08:00:00",
+        "name": "Crossover Service",
+        "date": "2026-12-31",
+        "time": "22:00:00",
         "description": "Special Sunday Holy Ghost Worship Service.",
         "location": "Church Auditorium"
     }
