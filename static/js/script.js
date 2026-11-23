@@ -21,8 +21,9 @@ mobileBtn.addEventListener('click', () => {
         preloader.style.display = 'none';
     }
 });*/
+
 // Preloader
-window.addEventListener('load', function() {
+/*window.addEventListener('load', function() {
     const preloader = document.querySelector('#preloader');
 
     if (!localStorage.getItem('preloaderShown')) {
@@ -36,7 +37,35 @@ window.addEventListener('load', function() {
     } else {
         preloader.style.display = 'none';
     }
-});
+});*/
+
+// Test preloader
+// Preloader: show once per tab, then hide when the page has loaded
+(() => {
+const preloader = document.querySelector('#preloader');
+if (!preloader) return;
+
+const shownKey = 'homePreloaderShown';
+
+  // Hide immediately on a return visit, including browser back/forward.
+if (sessionStorage.getItem(shownKey)) {
+    preloader.style.display = 'none';
+    return;
+}
+
+  // Show it only for the first homepage visit in this tab.
+sessionStorage.setItem(shownKey, 'true');
+
+  // Hide it when the initial page load finishes.
+window.addEventListener('load', () => {
+    preloader.style.display = 'none';
+}, { once: true });
+
+  // Also hide it if the browser restores this page from its back/forward cache.
+window.addEventListener('pageshow', () => {
+    preloader.style.display = 'none';
+}, { once: true });
+})();
 
 
 //Web worker

@@ -565,7 +565,7 @@ header.navbar {
     }
     #mobile.menu-end {
         margin-right: 40px;
-        background-color: rgb(83, 0, 0);
+        /*background-color: rgb(83, 0, 0);*/
         margin-left: 0;
         padding: 4px 8px;
         border-radius: 5px;
@@ -581,6 +581,7 @@ header.navbar {
         height: 3px;
         margin: 3px 0;
     }
+    /* Adjust the hambinger menu after scrolling*/
     #mobile.menu-end .change .bar:nth-child(1) {
         transform: rotate(-45deg) translate(-2px, 4px);
     }
@@ -591,21 +592,23 @@ header.navbar {
         background-color: #fff;
     }
     .bar {
-        width: 26px;
+        width: 22px;
         height: 3px;
         background-color: #fff;
-        margin: 5px 0;
+        margin: 3px 0;
         transition: 0.5s;
     }
     .change .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
         background-color: var(--aux-accent);
     }
     .change .bar:nth-child(2) {
         opacity: 0;
     }
+
+    /* This is to adjust the main hambinger menu at the top, not the one that comes out after scrolling*/
     .change .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-2px, -4px);
         background-color: var(--aux-accent);
     }
     #navlinks.link {
@@ -657,7 +660,7 @@ header.navbar {
     }
     .navbar #navhead img {
         margin-left: 12px;
-        width: 17%;
+        width: 12.5%;
         border-radius: 100%;
     }
     .navbar #navhead h2 {
@@ -2711,6 +2714,11 @@ i.scroll-top {
 .whatsapp-chat-select i {
     width: 10%;
     font-size: 16px;
+}
+
+.online-chat-select-text {
+    color: #000;
+    text-decoration: none;
 }
 
 .online-chat-select:hover,

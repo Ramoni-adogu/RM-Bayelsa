@@ -159,9 +159,9 @@
                     </div>
                 </div>
                 <div class="reg-type-programme-name">
-                    <p><span class="re-active" id="prog-name-a">Wind and Fire 2023</span></p>
-                    <p><span id="prog-name-b">Easter Conference 2024</span></p>
-                    <p><span id="prog-name-c">Kabash 2023</span></p>
+                    <p><span class="re-active" id="prog-name-a">Wind and Fire 2026</span></p>
+                    <p><span id="prog-name-b">Easter Conference 2027</span></p>
+                    <p><span id="prog-name-c">Kabash 2027</span></p>
                 </div>
                 <div class="learn-more-about-registration">
                     <i class="fa fa-info-circle" aria-hidden="true"></i> <small>You should also note:</small>
@@ -199,7 +199,7 @@
             <div class="event-details">
                 <img id="info-image" src="https://pallytoys.backendless.app/api/files/rm-images/rm-hq.png" alt="Event Image">
                 <div class="event-info">
-                    <p id="info-date">December 21 -25 2023</p>
+                    <p id="info-date">December 23 -27 2026</p>
                     <p id="info-time">7am - 12pm; 3pm - 7pm</p>
                     <p id="info-venue">Streamed from Headquarters</p>
                     <span id="demo"></span>
@@ -356,9 +356,9 @@
                     </div>
                     <div class="whatsapp-chat-select">
                         <i class="fa-brands fa-whatsapp"></i>
-                        <div class="online-chat-select-text">
+                        <a href="https://wa.me/+2348063161146" class="online-chat-select-text">
                             <span>WHATSAPP SUPPORT CENTRE</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -465,7 +465,7 @@
                     </div>
                 </div>
                 <div class="footer-copyright">
-                    <span>&copy; 2023, All Rights Reserved | Redemption Ministries Bayelsa</span>
+                    <span>&copy; 2026, All Rights Reserved | Redemption Ministries Bayelsa</span>
                     <span>Developed by Ramoni Green </span>
                 </div>
             </div>
@@ -479,7 +479,7 @@
     <script src="/static/js/jquery.validate.min.js"></script>
     <script src="/static/js/script.js"></script>
     <script>
-        let countDownDate = new Date("Dec 21, 2023 16:00:00 ").getTime();
+        let countDownDate = new Date("Dec 23, 2026 16:00:00 ").getTime();
         const x = setInterval(function() {
             const now = new Date().getTime();
             const distance = countDownDate - now;
@@ -487,8 +487,8 @@
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("demo").innerHTML = days + "days " + hours + "hours " +
-                minutes + "minutes " + seconds + "seconds ";
+            document.getElementById("demo").innerHTML = days + " days, " + hours + " hours, " +
+                minutes + " minutes, " + seconds + " seconds ";
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("demo ").innerHTML = "WIND AND FIRE CONFERENCE HAS BEGUN! ";
